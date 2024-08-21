@@ -5,8 +5,8 @@ import plotly.graph_objects as go
 
 # **1. Carregar e Limpar os Dados**
 # Carregar o dataset
-df = pd.read_csv('C:/Users/Colaborador(a)/Downloads/Novapasta/Titanic-Dataset.csv')
-
+#df = pd.read_csv('C:/Users/Colaborador(a)/Downloads/Novapasta/Titanic-Dataset.csv')
+df = pd.read_csv('Titanic-Dataset.csv')
 # Convertendo colunas categóricas
 df['Sex'] = df['Sex'].astype('category')
 df['Pclass'] = df['Pclass'].astype('category')
