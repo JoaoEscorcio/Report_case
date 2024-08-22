@@ -30,7 +30,7 @@ def show_correlation_analyses(df):
     mask = np.triu(np.ones_like(corr, dtype=bool))
 
     # Reduzir ainda mais o tamanho da figura
-    fig_heatmap = plt.figure(figsize=(7, 5))  # Ajuste para ser menor
+    fig_heatmap = plt.figure(figsize=(5, 3))  # Ajuste para ser menor
     sns.heatmap(corr, mask=mask, annot=True, cmap='Blues', vmin=-
                 1, vmax=1, center=0, linewidths=0.5, fmt='.2f')
     plt.title('Correlation Heatmap')
