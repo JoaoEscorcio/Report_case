@@ -106,7 +106,7 @@ with tabs[1]:
         {0: 'Not Survived', 1: 'Survived'})
     survival_dist = px.pie(survival_dist_df, names='Survived', values='Count',
                            title='Survivors vs Non-Survivors', hole=0.3,
-                           color='Survived', color_discrete_map={'Survived': '#004b87', 'Not Survived': '#ff6f91'})
+                           color='Survived', color_discrete_map={'Survived': '#0033a0', 'Not Survived': '#a0c6f0'})
     st.plotly_chart(survival_dist)
     #st.write("#### Comment:")
     #st.write("Survival rate by gender: 20.3% male; 79.7% female")
