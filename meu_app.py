@@ -108,8 +108,8 @@ with tabs[1]:
                            title='Survivors vs Non-Survivors', hole=0.3,
                            color='Survived', color_discrete_map={'Survived': '#004b87', 'Not Survived': '#ff6f91'})
     st.plotly_chart(survival_dist)
-    st.write("#### Comment:")
-    st.write("Survival rate by gender: 20.3% male; 79.7% female")
+    #st.write("#### Comment:")
+    #st.write("Survival rate by gender: 20.3% male; 79.7% female")
 
     st.write("---")
 
@@ -120,8 +120,7 @@ with tabs[1]:
                          color='Sex', color_discrete_map={'male': '#004b87', 'female': '#ff6f91'})
     st.plotly_chart(gender_dist)
     st.write("#### Comment:")
-    st.write(
-        "Survival rate by passenger class: First Class 46.8%; Second Class 35.2%; Third Class 18%")
+    st.write( "Distribution by gender: 64.8% male; 35.2% female")
 
     st.write("---")
 
@@ -135,6 +134,8 @@ with tabs[1]:
                                                             'Second Class': '#0073b7',
                                                             'Third Class': '#00a3e0'})
     st.plotly_chart(class_dist)
+    st.write("#### Comment:")
+    st.write( "the third class had more than 50%")
 
 # Aba "Data Distribution"
 with tabs[2]:
