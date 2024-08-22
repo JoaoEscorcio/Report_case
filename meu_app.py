@@ -40,12 +40,13 @@ tabs = st.tabs([
 # Aba "Start Here"
 with tabs[0]:
     st.title('Welcome to the Titanic Dashboard')
-    st.image("titanic.jpeg", caption='Titanic Ship', use_column_width=True)
+    
     st.write("""
     ### Start Here
     Welcome to our Titanic dataset analysis. This dashboard provides an in-depth overview of the Titanic passengers, including their survival rates, demographics, and class distribution.
     Here, you will find various visualizations and metrics to help you understand the dataset better. Start by exploring the "Overview" section for key insights and statistics.
     """)
+    st.image("titanic.jpeg", caption='Titanic Ship', use_column_width=True)
 
 # Aba "Overview"
 with tabs[1]:
